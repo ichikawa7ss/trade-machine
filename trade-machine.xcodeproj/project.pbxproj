@@ -74,6 +74,7 @@
 		75F13D1A2923DEDF00FFE73B = {
 			isa = PBXGroup;
 			children = (
+				75F13D512923E3ED00FFE73B /* Packages */,
 				75F13D252923DEDF00FFE73B /* trade-machine */,
 				75F13D362923DEE200FFE73B /* trade-machineTests */,
 				75F13D402923DEE200FFE73B /* trade-machineUITests */,
@@ -125,6 +126,13 @@
 				75F13D432923DEE200FFE73B /* trade_machineUITestsLaunchTests.swift */,
 			);
 			path = "trade-machineUITests";
+			sourceTree = "<group>";
+		};
+		75F13D512923E3ED00FFE73B /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Packages;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
