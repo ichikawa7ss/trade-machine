@@ -3,19 +3,17 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		75F13D272923DEDF00FFE73B /* trade_machineApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F13D262923DEDF00FFE73B /* trade_machineApp.swift */; };
-		75F13D292923DEDF00FFE73B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F13D282923DEDF00FFE73B /* ContentView.swift */; };
+		751F7CA22923F10600F5A89F /* AppFeature in Frameworks */ = {isa = PBXBuildFile; productRef = 751F7CA12923F10600F5A89F /* AppFeature */; };
+		75F13D272923DEDF00FFE73B /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F13D262923DEDF00FFE73B /* App.swift */; };
 		75F13D2B2923DEE200FFE73B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75F13D2A2923DEE200FFE73B /* Assets.xcassets */; };
 		75F13D2E2923DEE200FFE73B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75F13D2D2923DEE200FFE73B /* Preview Assets.xcassets */; };
 		75F13D382923DEE200FFE73B /* trade_machineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F13D372923DEE200FFE73B /* trade_machineTests.swift */; };
 		75F13D422923DEE200FFE73B /* trade_machineUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F13D412923DEE200FFE73B /* trade_machineUITests.swift */; };
 		75F13D442923DEE200FFE73B /* trade_machineUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F13D432923DEE200FFE73B /* trade_machineUITestsLaunchTests.swift */; };
-		75F13D542923E5E100FFE73B /* Infrastructure in Resources */ = {isa = PBXBuildFile; fileRef = 75F13D532923E5E100FFE73B /* Infrastructure */; };
-		75F13D592923E60400FFE73B /* Infrastructure in Frameworks */ = {isa = PBXBuildFile; productRef = 75F13D582923E60400FFE73B /* Infrastructure */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +36,7 @@
 /* Begin PBXFileReference section */
 		75F016E52923E82E005FE7EE /* Features */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Features; sourceTree = "<group>"; };
 		75F13D232923DEDF00FFE73B /* trade-machine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "trade-machine.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		75F13D262923DEDF00FFE73B /* trade_machineApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = trade_machineApp.swift; sourceTree = "<group>"; };
-		75F13D282923DEDF00FFE73B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		75F13D262923DEDF00FFE73B /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		75F13D2A2923DEE200FFE73B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		75F13D2D2923DEE200FFE73B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		75F13D332923DEE200FFE73B /* trade-machineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "trade-machineTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,7 +44,6 @@
 		75F13D3D2923DEE200FFE73B /* trade-machineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "trade-machineUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		75F13D412923DEE200FFE73B /* trade_machineUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = trade_machineUITests.swift; sourceTree = "<group>"; };
 		75F13D432923DEE200FFE73B /* trade_machineUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = trade_machineUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		75F13D532923E5E100FFE73B /* Infrastructure */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Infrastructure; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75F13D592923E60400FFE73B /* Infrastructure in Frameworks */,
+				751F7CA22923F10600F5A89F /* AppFeature in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,8 +97,7 @@
 		75F13D252923DEDF00FFE73B /* trade-machine */ = {
 			isa = PBXGroup;
 			children = (
-				75F13D262923DEDF00FFE73B /* trade_machineApp.swift */,
-				75F13D282923DEDF00FFE73B /* ContentView.swift */,
+				75F13D262923DEDF00FFE73B /* App.swift */,
 				75F13D2A2923DEE200FFE73B /* Assets.xcassets */,
 				75F13D2C2923DEE200FFE73B /* Preview Content */,
 			);
@@ -138,7 +133,6 @@
 			isa = PBXGroup;
 			children = (
 				75F016E52923E82E005FE7EE /* Features */,
-				75F13D532923E5E100FFE73B /* Infrastructure */,
 			);
 			path = Packages;
 			sourceTree = "<group>";
@@ -167,7 +161,7 @@
 			);
 			name = "trade-machine";
 			packageProductDependencies = (
-				75F13D582923E60400FFE73B /* Infrastructure */,
+				751F7CA12923F10600F5A89F /* AppFeature */,
 			);
 			productName = "trade-machine";
 			productReference = 75F13D232923DEDF00FFE73B /* trade-machine.app */;
@@ -233,7 +227,7 @@
 				};
 			};
 			buildConfigurationList = 75F13D1E2923DEDF00FFE73B /* Build configuration list for PBXProject "trade-machine" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -258,7 +252,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				75F13D2E2923DEE200FFE73B /* Preview Assets.xcassets in Resources */,
-				75F13D542923E5E100FFE73B /* Infrastructure in Resources */,
 				75F13D2B2923DEE200FFE73B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,8 +277,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75F13D292923DEDF00FFE73B /* ContentView.swift in Sources */,
-				75F13D272923DEDF00FFE73B /* trade_machineApp.swift in Sources */,
+				75F13D272923DEDF00FFE73B /* App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,6 +444,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -459,6 +452,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "ichikawa.trade-machine";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -481,6 +477,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -488,6 +485,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "ichikawa.trade-machine";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -612,9 +612,9 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		75F13D582923E60400FFE73B /* Infrastructure */ = {
+		751F7CA12923F10600F5A89F /* AppFeature */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = Infrastructure;
+			productName = AppFeature;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
