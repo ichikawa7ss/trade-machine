@@ -37,4 +37,3 @@ clean: ## Clean generated files
 build-cli-tools: ## Build CLI tools managed by SwiftPM
 	swift build -c release --package-path ./Tools/Common --product license-plist
 	swift build -c release --package-path ./Tools/Common --product swiftgen
-	swift build -c release --package-path ./Tools/SwiftLintTool --product swiftlint
