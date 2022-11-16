@@ -34,6 +34,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		75A0004F2925A174001BE06E /* DesignSystem */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = DesignSystem; sourceTree = "<group>"; };
 		75F016E52923E82E005FE7EE /* Features */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Features; sourceTree = "<group>"; };
 		75F13D232923DEDF00FFE73B /* trade-machine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "trade-machine.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		75F13D262923DEDF00FFE73B /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
@@ -132,6 +133,7 @@
 		75F13D522923E5E100FFE73B /* Packages */ = {
 			isa = PBXGroup;
 			children = (
+				75A0004F2925A174001BE06E /* DesignSystem */,
 				75F016E52923E82E005FE7EE /* Features */,
 			);
 			path = Packages;

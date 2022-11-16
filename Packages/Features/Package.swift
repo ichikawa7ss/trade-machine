@@ -19,6 +19,9 @@ let package = Package(
         // 追加するモジュールがあれば以下に追加する
     ],
     dependencies: [
+        // Local
+        .package(name: "DesignSystem", path: "../DesignSystem"),
+
         // TCA
         .package(url: "https://github.com/pointfreeco/swift-composable-architecture", from: "0.40.2"),
         .package(url: "https://github.com/pointfreeco/combine-schedulers", from: "0.7.4"),
@@ -31,6 +34,9 @@ let package = Package(
         .target(
             name: "AppFeature",
             dependencies: [
+                // Local
+                .product(name: "Representable", package: "DesignSystem"),
+
                 // Remote
                 .product(name: "ComposableArchitecture", package: "swift-composable-architecture"),
                 .product(name: "CasePaths", package: "swift-case-paths"),
