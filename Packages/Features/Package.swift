@@ -6,6 +6,7 @@ import PackageDescription
 let package = Package(
     name: "Features",
     platforms: [
+        .macOS(.v11),
         .iOS(.v15),
     ],
     products: [
@@ -25,9 +26,6 @@ let package = Package(
         .package(url: "https://github.com/pointfreeco/swift-custom-dump", from: "0.3.0"),
         .package(url: "https://github.com/pointfreeco/swift-identified-collections", from: "0.3.2"),
         .package(url: "https://github.com/pointfreeco/xctest-dynamic-overlay", from: "0.3.2"),
-        
-        // Local
-        // Loggerなど必要なものがあればここに追加する
     ],
     targets: [
         .target(
@@ -40,8 +38,7 @@ let package = Package(
                 .product(name: "CustomDump", package: "swift-custom-dump"),
                 .product(name: "IdentifiedCollections", package: "swift-identified-collections"),
                 .product(name: "XCTestDynamicOverlay", package: "xctest-dynamic-overlay"),
-            ],
-            path: "Sources"
+            ]
         ),
     ]
 )
