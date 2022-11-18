@@ -7,6 +7,7 @@
 
 import ComposableArchitecture
 import SwiftUI
+import Representable
 
 // MARK: - AppView
 public struct AppView: View {
@@ -18,7 +19,17 @@ public struct AppView: View {
 
     public var body: some View {
         WithViewStore(store) { viewStore in
-            Text("App")
+            ZStack {
+                LottieView(
+                    asset: "nba",
+                    isAnimating: viewStore.binding(
+                        get: { _ in viewStore.state.isAnimating },
+                        send: { _ in
+                            AppCore.Action.didFinishSplashAnimation
+                        }
+                    )
+                )
+            }
         }
     }
 }

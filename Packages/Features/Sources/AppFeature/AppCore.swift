@@ -16,14 +16,19 @@ public enum AppCore {
         var appDelegateState: AppDelegateCore.State
 
         public init() {
-            appDelegateState = .init()
+            self.appDelegateState = .init()
+            self.isAnimating = true
         }
+        
+        var isAnimating: Bool
+
     }
 
     // MARK: - Action
 
     public enum Action {
         case appDelegate(AppDelegateCore.Action)
+        case didFinishSplashAnimation
     }
 
     // MARK: - Environment
@@ -56,6 +61,10 @@ public enum AppCore {
                 switch action {
                 case .appDelegate:
                     return .none
+                case .didFinishSplashAnimation:
+                    return .run { send in
+                        print("didFinishSplashAnimation")
+                    }
                 }
             }
         )
