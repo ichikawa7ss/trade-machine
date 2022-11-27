@@ -33,7 +33,7 @@ public struct RootView: View {
                     )
                 }
             }
-            .navigationTitle("Root View")
+            .navigationBarTitle("Root View", displayMode: .inline)
             .onAppear { ViewStore(store).send(.onAppear) }
         }
     }
