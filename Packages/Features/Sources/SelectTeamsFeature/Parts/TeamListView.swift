@@ -15,7 +15,8 @@ struct TeamListView: View {
     var body: some View {
         List {
             ForEach(conference.teams()) { team in
-                HStack() {
+                HStack(spacing: 8) {
+                    TeamLogoImage(team: team, width: 32)
                     Text(team.name)
                     Spacer()
                 }

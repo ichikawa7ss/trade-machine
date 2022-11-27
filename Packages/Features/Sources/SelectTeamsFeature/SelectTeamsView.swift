@@ -23,14 +23,14 @@ public struct SelectTeamsView: View {
             VStack(spacing: 8.0) {
                 ZStack(alignment: Alignment.center) {
                     Rectangle()
-                        .fill(Color.gray)
+                        .fill(Color.white)
                         .frame(maxWidth: .infinity, maxHeight: 54)
                         .cornerRadius(8.0)
                         .padding(8)
                     HStack() {
                         ForEach(Array(viewStore.selectedTeams)) { team in
                             Spacer()
-                            Text(team.name)
+                            TeamLogoImage(team: team, width: 40)
                             Spacer()
                         }
                     }
