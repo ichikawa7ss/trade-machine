@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Representable
 
 struct TeamListView: View {
     
@@ -13,20 +14,38 @@ struct TeamListView: View {
     let tapCellHandler: ((Team) -> Void)?
     
     var body: some View {
-        List {
-            ForEach(conference.teams()) { team in
-                HStack(spacing: 8) {
-                    TeamLogoImage(team: team, width: 32)
-                    Text(team.name)
-                    Spacer()
-                }
-                .contentShape(Rectangle())
-                .onTapGesture {
-                    tapCellHandler?(team)
+        VStack(alignment: .leading, spacing: 8) {
+            header
+            List {
+                ForEach(conference.teams()) { team in
+                    HStack(spacing: 8) {
+                        TeamLogoImage(team: team, width: 32)
+                        Text(team.name)
+                        Spacer()
+                    }
+                    .contentShape(Rectangle())
+                    .onTapGesture {
+                        tapCellHandler?(team)
+                    }
                 }
             }
+            .listStyle(.plain)
         }
-        .listStyle(.plain)
+    }
+    
+    private var header: some View {
+        switch conference {
+        case .eastern:
+            return Asset.logoEastern.swiftUIImage
+                .resizable()
+                .scaledToFit()
+                .padding(4)
+        case .western:
+            return Asset.logoWestern.swiftUIImage
+                .resizable()
+                .scaledToFit()
+                .padding(4)
+        }
     }
 }
 
