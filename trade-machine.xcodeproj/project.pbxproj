@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		751F7CA22923F10600F5A89F /* AppFeature in Frameworks */ = {isa = PBXBuildFile; productRef = 751F7CA12923F10600F5A89F /* AppFeature */; };
+		75C62B7429333F8900F48A52 /* SelectTeamsFeature in Frameworks */ = {isa = PBXBuildFile; productRef = 75C62B7329333F8900F48A52 /* SelectTeamsFeature */; };
 		75F13D272923DEDF00FFE73B /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F13D262923DEDF00FFE73B /* App.swift */; };
 		75F13D2B2923DEE200FFE73B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75F13D2A2923DEE200FFE73B /* Assets.xcassets */; };
 		75F13D2E2923DEE200FFE73B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75F13D2D2923DEE200FFE73B /* Preview Assets.xcassets */; };
@@ -52,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75C62B7429333F8900F48A52 /* SelectTeamsFeature in Frameworks */,
 				751F7CA22923F10600F5A89F /* AppFeature in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -164,6 +166,7 @@
 			name = "trade-machine";
 			packageProductDependencies = (
 				751F7CA12923F10600F5A89F /* AppFeature */,
+				75C62B7329333F8900F48A52 /* SelectTeamsFeature */,
 			);
 			productName = "trade-machine";
 			productReference = 75F13D232923DEDF00FFE73B /* trade-machine.app */;
@@ -617,6 +620,10 @@
 		751F7CA12923F10600F5A89F /* AppFeature */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = AppFeature;
+		};
+		75C62B7329333F8900F48A52 /* SelectTeamsFeature */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SelectTeamsFeature;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
