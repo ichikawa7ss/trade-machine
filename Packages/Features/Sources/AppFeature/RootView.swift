@@ -24,7 +24,12 @@ public struct RootView: View {
                 Section(header: Text("Getting started")) {
                     NavigationLink(
                         "SelectTeams",
-                        destination: SelectTeamsView()
+                        destination: SelectTeamsView(
+                            store: self.store.scope(
+                                state: \.selectTeams,
+                                action: Root.Action.selectTeams
+                            )
+                        )
                     )
                 }
             }

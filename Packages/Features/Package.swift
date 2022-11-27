@@ -40,6 +40,7 @@ let package = Package(
             name: "AppFeature",
             dependencies: [
                 // Local
+                "SelectTeamsFeature",
                 .product(name: "Representable", package: "DesignSystem"),
 
                 // Remote

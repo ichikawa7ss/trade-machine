@@ -7,6 +7,7 @@
 
 import ComposableArchitecture
 import Foundation
+import SelectTeamsFeature
 
 public struct Root: ReducerProtocol {
 
@@ -17,12 +18,15 @@ public struct Root: ReducerProtocol {
 	public struct State: Equatable {
         public init() {}
         
+        var selectTeams = SelectTeams.State()
+        
     }
 
     // MARK: - Action
 
     public enum Action {
         case onAppear
+        case selectTeams(SelectTeams.Action)
     }
 
     public var body: some ReducerProtocol<State, Action> {
@@ -31,7 +35,13 @@ public struct Root: ReducerProtocol {
             case .onAppear:
                 state = .init()
                 return .none
+            case .selectTeams:
+                return .none
             }
+        }
+        
+        Scope(state: \.selectTeams, action: /Action.selectTeams) {
+            SelectTeams()
         }
     }
 }

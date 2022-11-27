@@ -6,18 +6,28 @@
 //
 
 import SwiftUI
+import ComposableArchitecture
 
 public struct SelectTeamsView: View {
 
-    public init() {}
+    public init(store: StoreOf<SelectTeams>) {
+        self.store = store
+    }
+    
+    public let store: StoreOf<SelectTeams>
     
     public var body: some View {
-        Text("Hello, World!")
+        Text("SelectTeams")
     }
 }
 
 struct SelectTeamsView_Previews: PreviewProvider {
     static var previews: some View {
-        SelectTeamsView()
+        SelectTeamsView(
+            store: .init(
+                initialState: SelectTeams.State(),
+                reducer: SelectTeams()
+            )
+        )
     }
 }
