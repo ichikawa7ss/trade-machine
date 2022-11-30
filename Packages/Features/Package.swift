@@ -22,6 +22,12 @@ let package = Package(
         "SelectTeamsFeature",
       ]
     ),
+    .library(
+      name: "SelectPlayerFeature",
+      targets: [
+        "SelectPlayerFeature",
+      ]
+    ),
   ],
   dependencies: [
     // Local
@@ -54,6 +60,21 @@ let package = Package(
     ),
     .target(
       name: "SelectTeamsFeature",
+      dependencies: [
+        // Local
+        .product(name: "Representable", package: "DesignSystem"),
+        
+        // Remote
+        .product(name: "ComposableArchitecture", package: "swift-composable-architecture"),
+        .product(name: "CasePaths", package: "swift-case-paths"),
+        .product(name: "CombineSchedulers", package: "combine-schedulers"),
+        .product(name: "CustomDump", package: "swift-custom-dump"),
+        .product(name: "IdentifiedCollections", package: "swift-identified-collections"),
+        .product(name: "XCTestDynamicOverlay", package: "xctest-dynamic-overlay"),
+      ]
+    ),
+    .target(
+      name: "SelectPlayerFeature",
       dependencies: [
         // Local
         .product(name: "Representable", package: "DesignSystem"),

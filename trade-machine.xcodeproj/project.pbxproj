@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		751E757C2933CB360017A3C9 /* Representable in Frameworks */ = {isa = PBXBuildFile; productRef = 751E757B2933CB360017A3C9 /* Representable */; };
 		751F7CA22923F10600F5A89F /* AppFeature in Frameworks */ = {isa = PBXBuildFile; productRef = 751F7CA12923F10600F5A89F /* AppFeature */; };
+		755F961B2937A84C00D5F0BB /* SelectPlayerFeature in Frameworks */ = {isa = PBXBuildFile; productRef = 755F961A2937A84C00D5F0BB /* SelectPlayerFeature */; };
 		75C62B7429333F8900F48A52 /* SelectTeamsFeature in Frameworks */ = {isa = PBXBuildFile; productRef = 75C62B7329333F8900F48A52 /* SelectTeamsFeature */; };
 		75F13D272923DEDF00FFE73B /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F13D262923DEDF00FFE73B /* App.swift */; };
 		75F13D2B2923DEE200FFE73B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75F13D2A2923DEE200FFE73B /* Assets.xcassets */; };
@@ -54,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				755F961B2937A84C00D5F0BB /* SelectPlayerFeature in Frameworks */,
 				75C62B7429333F8900F48A52 /* SelectTeamsFeature in Frameworks */,
 				751E757C2933CB360017A3C9 /* Representable in Frameworks */,
 				751F7CA22923F10600F5A89F /* AppFeature in Frameworks */,
@@ -172,6 +174,7 @@
 				751F7CA12923F10600F5A89F /* AppFeature */,
 				75C62B7329333F8900F48A52 /* SelectTeamsFeature */,
 				751E757B2933CB360017A3C9 /* Representable */,
+				755F961A2937A84C00D5F0BB /* SelectPlayerFeature */,
 			);
 			productName = "trade-machine";
 			productReference = 75F13D232923DEDF00FFE73B /* trade-machine.app */;
@@ -629,6 +632,10 @@
 		751F7CA12923F10600F5A89F /* AppFeature */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = AppFeature;
+		};
+		755F961A2937A84C00D5F0BB /* SelectPlayerFeature */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SelectPlayerFeature;
 		};
 		75C62B7329333F8900F48A52 /* SelectTeamsFeature */ = {
 			isa = XCSwiftPackageProductDependency;
