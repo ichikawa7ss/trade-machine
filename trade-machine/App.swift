@@ -11,14 +11,14 @@ import SwiftUI
 
 @main
 struct App: SwiftUI.App {
-    var body: some Scene {
-        WindowGroup {
-            RootView(
-                Store(
-                    initialState: Root.State(),
-                    reducer: Root()
-                )
-            )
-        }
+  var body: some Scene {
+    WindowGroup {
+      RootView(
+        Store(
+          initialState: Root.State(),
+          reducer: Root()
+        )
+      )
     }
+  }
 }

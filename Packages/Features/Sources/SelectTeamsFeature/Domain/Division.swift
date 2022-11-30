@@ -8,25 +8,25 @@
 import Foundation
 
 public enum Division: String, Equatable {
-    case atlantic
-    case central
-    case southeast
-    case northwest
-    case pacific
-    case southwest
+  case atlantic
+  case central
+  case southeast
+  case northwest
+  case pacific
+  case southwest
 }
 
 extension Division {
-    var conference: Conference {
-        switch self {
-        case .atlantic,
-                .central,
-                .southeast:
-            return .eastern
-        case .northwest,
-                .pacific,
-                .southwest:
-            return .western
-        }
+  var conference: Conference {
+    switch self {
+    case .atlantic,
+        .central,
+        .southeast:
+      return .eastern
+    case .northwest,
+        .pacific,
+        .southwest:
+      return .western
     }
+  }
 }

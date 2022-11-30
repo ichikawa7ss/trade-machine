@@ -87,7 +87,9 @@
 				75F13D242923DEDF00FFE73B /* Products */,
 				75F13D552923E5F500FFE73B /* Frameworks */,
 			);
+			indentWidth = 2;
 			sourceTree = "<group>";
+			tabWidth = 2;
 		};
 		75F13D242923DEDF00FFE73B /* Products */ = {
 			isa = PBXGroup;
